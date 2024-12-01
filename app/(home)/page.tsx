@@ -3,7 +3,7 @@ import { japaneseDict } from "../utils/db";
 
 export default function HomePage() {
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div className="grid grid-cols-3 gap-2 p-4">
       {japaneseDict.map((word) => (
         <Link
           className="flex flex-col items-center p-4 border-2 rounded-xl"

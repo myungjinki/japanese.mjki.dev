@@ -27,10 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center bg-slate-300`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center bg-slate-300`}
+      >
         <div className="flex flex-col justify-between w-full bg-white lg:max-w-sm h-dvh">
           <HeaderComponent />
-          <div className="flex flex-col justify-start h-full p-4">{children}</div>
+          <div className="flex flex-col justify-start h-full">{children}</div>
           <FooterComponent />
         </div>
       </body>
